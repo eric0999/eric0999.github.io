@@ -1,2 +1,2 @@
-# http://eric0999.github.io
+# http://zazz.github.io
 my personal web
