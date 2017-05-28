@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width = device-width, initial-scale=1">
 <title> Zazz </title>
+		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="zazz.jpg" />
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,23 +15,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 <style>
 
-body {
-	background: url(zazz.jpg) no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;}
 
-#contact {color:white}
-.btn {
-		
-		padding:5px 20px;
-		color:white;
-		background-color:#2196F3;
-		font-size: 10px;
-		border:none;
-		}
-		
+
 
 
 </style>
@@ -49,7 +35,7 @@ background-size: cover;}
 							<div class="subnav">
 								<div class="container-fluid">
 								<ul class="nav menu nav-pills">
-									<li class="item-122 default"> <a href="index.html" ><span class=" btn btn-primary glyphicon glyphicon glyphicon-home" > HOME</span></a></li>
+									<li class="item-122 default"> <a class="active" href="index.html" ><span class=" btn btn-primary glyphicon glyphicon glyphicon-home" > HOME</span></a></li>
 									<li class="item-122 default"><a href="video.html"><span class="btn btn-primary glyphicon glyphicon-film"> Videos</span> </a></li>
 									
 										<li class="item-122 default"><a href="#colAbout" data-toggle="collapse"><button class="btn btn-primary glyphicon glyphicon-info-sign" title="Zazz Academy"> About</button></a></li>
@@ -71,20 +57,35 @@ background-size: cover;}
 
 
 
-<div id="colAbout" class="jumbotron container collapse" style="background-color:white; color:black;"><br>
+
+
+
+
+<div id="colAbout" class="jumbotron container collapse" ><br>
 							<h1 style="color:black; text-align:center">Zazz Academy is all about</h1>
-							<p style="text-align:center">Fitness, martial arts training and dance...internet cafe and milkshakes! Maria, Elan, Cesar, Nico-Jay and Eric invite you to ZAZZ up your life!
+							<p style="text-align:center " >Fitness, martial arts training and dance...internet cafe and milkshakes! Maria, Elan, Cesar, Nico-Jay and Eric invite you to ZAZZ up your life!
 							</p>
 							
 </div>
 
 		
 
+		<div class="page-header" style="margin-top:80px">
+		<h1 style="text-align:center ;color:white">Zazz Academy</h1>
+		</div>
+
 		
 			
 		<br>
-				<div class="jumbotron container" style="background-color:#5D6D7E; float:bottom;  opacity: .7;">
-					<h1 style="color:white"> Under Development</h1>
+				
+
+		</div>
+
+
+
+
+<div id="develop" class="container">
+					
 					 
 
 
@@ -100,6 +101,8 @@ background-size: cover;}
 							<li role="separator" class="divider"></li>
 							<li class="disabled"><a href="#">ericbronola@gmail.com</a></li>
 							</ul>
+							
+							<h1 style="color:white"> Under Development</h1>
 											
 
 							</padding>
@@ -107,14 +110,33 @@ background-size: cover;}
 						
 					
 				</div>
+				
+<script>
+            (function($, Hubs, undefined) {
+                
+$(function () {
+  var message = "Hey! Come back!";
+  var original;
+  
+  $(window).focus(function() {
+    if(original) {
+      document.title = original;
+    }
+  }).blur(function() {
+    var title = $('title').text();
+    if(title != message) {
+      original = title;
+    }
+    document.title = message;
+  });
+});
 
-		</div>
-<div class="page-header">
-<h1 style="text-align:center ;color:white">Zazz Academy</h1>
-</div>
-
-
+            }(window.jQuery, window.Hubs));
+ </script>
+				
+				
 </body>
 
 </html>
+		
 		
