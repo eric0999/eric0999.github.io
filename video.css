@@ -1,0 +1,43 @@
+body {
+	background: url(zazz.jpg) no-repeat center fixed; 
+-webkit-background-size: 80%;
+-moz-background-size: 80%;
+-o-background-size: 80%;
+background-size: 80%;}
+
+#contact {color:white}
+.btn {
+		
+		padding:5px 20px;
+		color:white;
+		background-color:#2196F3;
+		font-size: 10px;
+		border:none;
+		}
+		
+div#colAbout {	border-radius:13px;
+				overflow: scroll;
+				height:250px;
+				background-color:#AED6F1 ; 
+				color:black;
+				opacity:.85;
+				}
+div#develop {
+			
+			border-radius:12px;
+			position:fixed ;
+			bottom: 20px;
+			right: 16px;
+			z-index:1;
+			height:100px;
+			width:500px;
+			background-color:#FF6C6C ; 
+			
+			text-align:center;
+			opacity: .7
+			}
+			
+.iframe {display:block;
+			margin:auto}	
+
+.active {background-color:#5D6D7E}		
