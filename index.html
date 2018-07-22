@@ -2,10 +2,39 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="llqrcode.js"></script>
 </head>
 <body>
-<h1>hello</h1>
-	<a href="index.php">click me</a>
-<iframe src="http://localhost/qr"></iframe>
+
+
+
+<div style="display:block" id="result"></div>
+	<div class="selector" id="webcamimg" onclick="setwebcam()" align="left" ></div>
+		<div class="selector" id="qrimg" onclick="setimg()" align="right" ></div>
+			<center id="mainbody"><div id="outdiv"></div></center>
+				<canvas id="qr-canvas"  width="800" height="600"></canvas>
+
+<script type="text/javascript">load();</script>
+<script src="./jquery-1.11.2.min.js"></script>
+
+<script src="webcam.js"></script>
+
+<div id="my_camera" style="width:320px; height:240px;"></div>
+<div id="my_result"></div>
+
+<script language="JavaScript">
+    Webcam.attach( '#my_camera' );
+
+    function take_snapshot() {
+        Webcam.snap( function(data_uri) {
+            document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
+        } );
+    }
+</script>
+
+<a href="javascript:void(take_snapshot())">Take Snapshot</a>
 </body>
 </html>
+
